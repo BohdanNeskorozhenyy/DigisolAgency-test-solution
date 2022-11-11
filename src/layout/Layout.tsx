@@ -2,7 +2,7 @@ import { FC, useState, useEffect } from 'react';
 import { Container, FilterWrapper } from './styles';
 import { Filter } from '../components';
 import { Cards } from '../components/Cadrs';
-import { GlobalContext } from '../../context';
+import { GlobalContext } from '../context';
 import { Asset } from '../types';
 import { useRouter } from 'next/router';
 import { CREATED_AT_PARAM } from '../constants';

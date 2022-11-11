@@ -1,6 +1,6 @@
 import { FC, useContext } from 'react';
 import { BookmarkIcon, CheckedBookmarkIcon } from '../../../assets/icons';
-import { GlobalContext } from '../../../context';
+import { GlobalContext } from '../../context';
 import { Box } from './styles';
 
 interface IBookmark {

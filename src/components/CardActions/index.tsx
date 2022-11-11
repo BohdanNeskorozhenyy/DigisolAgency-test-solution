@@ -2,7 +2,7 @@ import { FC, useContext } from 'react';
 import { Container, UsedCount, UsedLabel, TextWrap } from './styles';
 import { Button } from '../Button';
 import { Bookmark } from '../Bookmark';
-import { GlobalContext } from '../../../context';
+import { GlobalContext } from '../../context';
 import { Asset } from '../../types';
 
 interface ICardActions {
