@@ -5,4 +5,4 @@ export const PDF_TYPE_NAME = 'PDF';
 export const GIF_TYPE_NAME = 'GIF';
 export const ARTICLE_TYPE_NAME = 'Article';
 
-export const SORT_BY_PARAM = 'sort-by';
+export const CREATED_AT_PARAM = 'created-at';

@@ -5,7 +5,7 @@ import { Cards } from '../components/Cadrs';
 import { GlobalContext } from '../../context';
 import { Asset } from '../types';
 import { useRouter } from 'next/router';
-import { SORT_BY_PARAM } from '../constants';
+import { CREATED_AT_PARAM } from '../constants';
 
 import { data } from '../../mockData';
 
@@ -30,7 +30,7 @@ export const Layout: FC = () => {
   useEffect(() => {
     const filtered = data.filter((item) => filters[item.type]).slice(0, 50);
     const sorted = filtered.sort((a, b) =>
-      router.query['sort-by'] === SORT_BY_PARAM
+      router.query['sort-by'] === CREATED_AT_PARAM
         ? b['created-at'] - a['created-at']
         : b['used-total-count'] - a['used-total-count'],
     );
