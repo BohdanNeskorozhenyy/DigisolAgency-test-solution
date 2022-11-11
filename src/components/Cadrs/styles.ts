@@ -10,4 +10,7 @@ export const Container = styled.div`
     height: calc(100vh - 279px);
     overflow-y: auto;
   }
+  @media (max-width: 600px) {
+    height: calc(100vh - 320px);
+  }
 `;
