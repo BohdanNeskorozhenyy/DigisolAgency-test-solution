@@ -13,7 +13,7 @@ export const Layout: FC = () => {
   const router = useRouter();
   const [filteredData, setFilteredData] = useState<Asset[]>([]);
   const [savedAssets, setSavedAssets] = useState<{ [key: string]: boolean }>({});
-  const [filters, setFilters] = useState<{ [key: string]: boolean }>({
+  const [filters, setFilters] = useState<{ [key: number]: boolean }>({
     0: false,
     1: true,
     2: false,

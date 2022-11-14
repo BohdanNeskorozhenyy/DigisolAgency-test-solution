@@ -1,7 +1,6 @@
 import { FC, useMemo } from 'react';
 import {
   Box,
-  Img,
   CardInfoBlock,
   TitleBox,
   Description,
@@ -11,11 +10,13 @@ import {
   FooterTextBox,
   FooterLink,
   FooterTitle,
+  Spiner,
 } from './styles';
 import { ImagePlaceholder } from '../ImagePlaceholder';
 import { Tags } from '../Tags';
 import { Asset } from '../../types';
 import { CardActions } from '../CardActions';
+import Image from 'next/image';
 import {
   TemplateIcon,
   ImageIcon,
@@ -53,10 +54,11 @@ export const Card: FC<ICard> = ({ data }) => {
     <Box>
       <ImageBox>
         {data['preview-image'] ? (
-          <Img src={data['preview-image']} />
+          <Image layout="fill" objectFit="cover" alt="card_image" src={data['preview-image']} />
         ) : (
           <ImagePlaceholder icon={icon} />
         )}
+        <Spiner />
         <CardActions data={data} />
       </ImageBox>
       <CardInfoBlock>

@@ -1,6 +1,13 @@
 import styled from 'styled-components';
+import ClipLoader from 'react-spinners/ClipLoader';
 import { colors } from '../../styles/constants';
 
+export const Spiner = styled(ClipLoader)`
+  position: absolute;
+  left: calc(50% - 17.5px);
+  top: calc(50% - 17.5px);
+  z-index: -1;
+`;
 export const Box = styled.div`
   background-color: ${colors.white.primary};
   width: 216px;
